@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Test Integration App</label>
+    <description>Application metadata used for secret scanning tests with GitGuardian</description>
+
+    <!-- Named Credential Simulation -->
+    <namedCredentials>
+        <fullName>Test_Named_Credential</fullName>
+        <endpoint>https://api.example.com/v1</endpoint>
+        <principalType>NamedUser</principalType>
+        <authenticationProtocol>Password</authenticationProtocol>
+
+        <!-- ⚠️ FAKE SECRET: OAuth Client Secret (for testing only) -->
+        <creds>FAKE_OAUTH_CLIENT_SECRET_9f8a7b6c5d4e3f2</creds>
+
+        <username>integration.user@example.com</username>
+    </namedCredentials>
+
+    <!-- Custom Setting Metadata -->
+    <customSettings>
+        <fullName>Integration_Settings__c</fullName>
+
+        <!-- ⚠️ FAKE SECRET: AWS-style Access Key -->
+        <awsAccessKey__c>AKIAFAKE1234567890</awsAccessKey__c>
+
+        <!-- ⚠️ FAKE SECRET: AWS-style Secret Key -->
+        <awsSecretKey__c>fakeAwsSecretKeyExample1234567890abcd</awsSecretKey__c>
+
+        <!-- ⚠️ FAKE SECRET: Generic API Token -->
+        <apiToken__c>gg_test_token_abcdef1234567890</apiToken__c>
+    </customSettings>
+
+    <!-- Remote Site Setting -->
+    <remoteSiteSettings>
+        <fullName>External_API</fullName>
+        <url>https://external-api.example.com</url>
+
+        <!-- ⚠️ FAKE SECRET: Bearer Token -->
+        <authorizationHeader>Bearer fakeBearerToken_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</authorizationHeader>
+    </remoteSiteSettings>
+
+</CustomApplication>
