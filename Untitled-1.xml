@@ -23,7 +23,7 @@
         <!-- ⚠️ FAKE SECRET: AWS-style Access Key -->
         <awsAccessKey__c>AKIAFAKE1234567890</awsAccessKey__c>
         <username>Testeract@test.com</username>
-        <password>AllTheBestInFindingSecret@34</password>
+        <secret>AllTheBestInFindingSecret@34</secret>
 
         <!-- ⚠️ FAKE SECRET: AWS-style Secret Key -->
         <awsSecretKey__c>fakeAwsSecretKeyExample1234567890abcd</awsSecretKey__c>
