@@ -11,7 +11,7 @@
         <authenticationProtocol>Password</authenticationProtocol>
 
         <!-- ⚠️ FAKE SECRET: OAuth Client Secret (for testing only) -->
-        <creds>FAKE_OAUTH_CLIENT_SECRET_9f8a7b6c5d4e3f2</creds>
+        <secret>FAKE_OAUTH_CLIENT_SECRET_9f8a7b6c5d4e3f2</secret>
 
         <username>integration.user@example.com</username>
     </namedCredentials>
@@ -22,6 +22,8 @@
 
         <!-- ⚠️ FAKE SECRET: AWS-style Access Key -->
         <awsAccessKey__c>AKIAFAKE1234567890</awsAccessKey__c>
+        <username>Testeract@test.com</username>
+        <password>AllTheBestInFindingSecret@34</password>
 
         <!-- ⚠️ FAKE SECRET: AWS-style Secret Key -->
         <awsSecretKey__c>fakeAwsSecretKeyExample1234567890abcd</awsSecretKey__c>
