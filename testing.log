@@ -1,0 +1,39 @@
+2026-05-11 10:15:23 INFO  [AppInit] Application starting...
+2026-05-11 10:15:24 DEBUG [ConfigLoader] Loaded DB config: user=admin password=Admin@1234!
+
+2026-05-11 10:15:30 INFO  [DBConnection] Connecting to DB: jdbc:mysql://localhost:3306/sampledb?user=admin&password=Admin@1234!
+
+2026-05-11 10:15:35 INFO  [AuthService] User login attempt: username=admin
+2026-05-11 10:15:35 DEBUG [AuthService] Received Basic Auth token: dXNlcjpwYXNzd29yZA==
+
+2026-05-11 10:16:02 INFO  [APIClient] Sending request to external API
+2026-05-11 10:16:02 DEBUG [APIClient] Authorization header: Bearer sk_test_51ExampleSecretKey123456
+
+2026-05-11 10:16:10 WARN  [AWSClient] Using AWS credentials: AccessKey=AKIAIOSFODNN7EXAMPLE SecretKey=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+2026-05-11 10:16:20 DEBUG [WebhookService] Slack webhook URL triggered: https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+
+2026-05-11 10:16:30 INFO  [GitHubSync] Using GitHub token: ghp_abcdefghijklmnopqrstuvwxyz123456
+
+2026-05-11 10:16:42 DEBUG [JWTValidator] Token received:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.samplepayload.signature
+
+2026-05-11 10:17:00 ERROR [FTPService] Connection failed for ftp://user:ftpPass@123@ftp.example.com
+
+2026-05-11 10:17:15 DEBUG [EncryptionService] Loaded encryption key: mySuperSecretEncryptionKey123!
+
+2026-05-11 10:17:25 INFO  [AzureClient] Connection string:
+DefaultEndpointsProtocol=https;AccountName=examplestorage;AccountKey=exampleKey123456789==
+
+2026-05-11 10:17:40 DEBUG [PrivateKeyLoader] Loaded private key:
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAexamplefakekeydata1234567890
+-----END RSA PRIVATE KEY-----
+
+2026-05-11 10:18:00 WARN  [OAuthService] Refresh token used: 1//04ExampleRefreshTokenXYZ123
+
+2026-05-11 10:18:10 INFO  [System] Exported env variable PROD_DB_PASSWORD=Prod@5678!
+
+2026-05-11 10:18:20 DEBUG [ObfuscationTest] password_part1=Admin@ password_part2=5678! combined=Admin@5678!
+
+2026-05-11 10:18:30 INFO  [System] Application shutdown complete.
